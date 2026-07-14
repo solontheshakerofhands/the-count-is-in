@@ -1,4 +1,5 @@
 
+/*
 // src/lib/game/game.js
 import Matter from 'matter-js';
 
@@ -59,7 +60,6 @@ function handleResize() {
 }
 
 
-/*
   import { onMount, onDestroy } from 'svelte';
   // You will need to install matter-js: npm install matter-js
   import Matter from 'matter-js';
