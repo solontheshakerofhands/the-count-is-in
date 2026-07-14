@@ -11,7 +11,6 @@
 <style>
   :global(body) {
     margin: 0;
-    background-color: #050510;
     font-family: sans-serif;
     overflow-x: hidden;
   }

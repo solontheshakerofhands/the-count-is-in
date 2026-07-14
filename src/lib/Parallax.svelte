@@ -33,10 +33,8 @@
   </div>
 
   <div class="layer pier" style:transform={pierTransform}>
-    <a href="/stacker">
-      <div class="pier-sign" >
-        <img src="/pier_sign.webp" alt="pier scene"/>
-      </div>
+    <a href="/stacker" class="pier-sign" data-sveltekit-preload-data="off">
+      <img src="/pier_sign.webp" alt="pier scene"/>
     </a>
     <img src="/pier_scene.webp" alt="pier scene"/>
   </div>
@@ -52,7 +50,7 @@
     height: 170vh;
     width: 100%;
     overflow: hidden;
-    background-image: url('background.webp');
+    background-image: url('/background.webp');
   }
 
   .layer {
@@ -92,10 +90,8 @@
     left: 50vw;
     transform: translateX(-46%);
     box-shadow: inset 14em 1em #f2cb77, 0 0 10px 5px #f2cb77;
-  }
-  .pier-sign:hover {
-    transform: translate(-45%, -6px);
-    box-shadow: inset 14em 1em #dbaf51, 0 0 10px 5px #dbaf51;
+    display: block; 
+    text-decoration: none;
   }
 
   .beach {
