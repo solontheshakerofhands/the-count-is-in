@@ -2,7 +2,7 @@
 <script>
   import { onMount } from 'svelte';
   // Import the score store from our engine
-  // import { initGame } from '$lib/game/stacker.js';
+  import { initGame } from '$lib/game/stacker.js';
 
   let canvasElement;
   let score = $state(0);
@@ -12,8 +12,8 @@
 
   onMount(() => {
     // Call your external game code once the DOM is ready
-    // cleanup = initGame(canvasElement);
-    //return () => cleanup?.();
+    cleanup = initGame(canvasElement);
+    return () => cleanup?.();
   });
 </script>
 
